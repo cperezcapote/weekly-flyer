@@ -1,4 +1,4 @@
-# weekly-flyer
+# Requirements
 
 Task is to develop a webpage that features fully responsive design based on assets provided in the zip file, and has 4 "modes" of responsiveness (assume that display screen is 1080p):
 
@@ -15,6 +15,12 @@ Notes:
 1. All content needs to be used in all modes, the content just shifts down based on the screen mode we are in
 2. Mobile mode has a catch, it needs to hide menu that shows 'all deals|flyer items|print flyer|coupons' and only display 'Weekly flyer' banner
 3. Project needs to be done in Vue.JS
+
+# Implementation
+
+- My idea for the login screen was to add `vue-router` and a couple of screen with its specific routes, one for the `login` and another for the `flyer`. Show the login on the \ route and protect the other one with a [route guard](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards). I would have added a token to the `localStorage` after a successfull authentication and check for it on the guard before navigating to that route.
+- The `Product` component could be reused for both main and regular products by just adding the right css class (`.product` vs `.main-product`).
+- Could have used a css pre-procesor.
 
 ## Project setup
 
