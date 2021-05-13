@@ -1,0 +1,45 @@
+.img-ctn {
+  margin: 15px 0px 0px 15px;
+}
+
+img.responsive {
+  width: 100%;
+  height: auto;
+}
+
+/* Tablet */
+@media only screen and (min-device-width: 540px) and (max-device-width: 810px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-product {
+    width: 66.6% !important;
+  }
+
+  .product {
+    width: 33.3% !important;
+  }
+}
+
+/* Portrait */
+@media only screen and (min-device-width: 270px) and (max-device-width: 540px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-product {
+    width: 100% !important;
+  }
+
+  .banner,
+  .navbar,
+  .product {
+    width: 50% !important;
+  }
+}
+
+/* Mobile */
+@media only screen and (max-device-width: 270px) and (-webkit-min-device-pixel-ratio: 1) {
+  .main-product,
+  .product,
+  .banner {
+    width: 100% !important;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+}
